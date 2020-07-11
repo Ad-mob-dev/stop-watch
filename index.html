@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+  <h1 class="bg-dark text-center text-white"> <strong>STOP WATCH</strong></h1>
+  <!-- m/s/ms -->
+  <div class="row container-fluid main m-auto mt-5">  
+    <div class="col-md-12 text-center display-4 mt-5">
+       <div id="divinn">
+        <h2 id="min" class="badge-dark badge rounded-circle">0</h2> :
+        <h2 id="sec"  class="badge-dark badge rounded-circle">0</h2> :
+        <h2 id="msec"  class="badge-dark badge rounded-circle">0</h2>
+       </div>
+    </div>
+  </div>
+  <!-- buttons -->
+  <div class="col-md-12 text-center display-1">
+    <button class="btn btn-primary btn-lg rounded-circle p-3" onclick="s()" id="sbtn" title="Press to Start Timer"> <strong>Start</strong> </button>
+    <button class="btn btn-danger btn-lg rounded-circle p-3" onclick="stop()" title="Press to Stop Timer"> <strong>Stop</strong> </button>
+    <button class="btn btn-dark btn-lg rounded-circle p-3" onclick="r()" title="Press to Reset Timer"><strong>Reset</strong></button>
+    <button class="btn btn-success btn-lg rounded-circle p-3 pl-4 pr-4" onclick="lap()" title="Press to capture Lap"><strong>Lap</strong></button>
+</div>
+
+<div id="lapp" class="mt-2 text-center"></div>   
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
